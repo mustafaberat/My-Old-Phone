@@ -1,0 +1,175 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  color: var(--white);
+}
+
+:root{
+  --height: 500px;
+  --width: 250px;
+  --widthOfTopButtons: 80px;
+  --width-bottom-buttons: 100%;
+  --heightOfCallAndRefuseButtons: 35px;
+  --heightOfBackAndForwardButtons: 26px;
+  --paddingOfCallAndRefuseButtons: 24px;
+  --paddingOfBackAndForwardButtons: 28px;
+  --border2pxblack: 2px solid var(--black);
+  --heightOfMain: 60px;
+  --font-family: 'Noto Sans HK', sans-serif;
+  --white: #f7fbff;
+  --black: rgb(17, 17, 17);
+}
+
+.cellphone{
+  height: var(--height);
+  width: var(--width);
+  position: absolute;
+	top: 50%;
+	left: 50%;
+  transform: translate(-50%,-50%);
+
+
+  /* MAKE IT DYNAMIC */
+  border: 12px solid var(--black);
+  border-radius: 15px;
+}
+
+.cellphone-top{
+  height: 65%;
+  border: 5px solid darkred;
+}
+
+.cellphone-top-hear{
+  background-color: var(--white);
+  position: relative;
+	top: 5%;
+	left: 50%;
+  transform: translate(-50%,-50%);
+  width: 30%;
+  height: 3%;
+  border: 2px solid var(--black);
+  border-radius: 20%;
+  margin-bottom: 10px;
+  /* box-shadow: 1px 2px 3px var(--black); */
+}
+
+
+.cellphone-top-screen{
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 60%;
+  width: 100%;
+  color: var(--white);
+  border: 15px solid var(--white);
+}
+
+.cellphone-top-buttons{
+  margin: 2px;
+}
+
+.cellphone-top-buttons-line1{
+  display: flex;
+}
+
+.cellphone-top-buttons-right-top{
+  margin-left: auto;
+}
+
+.cellphone-top-buttons-main{
+  height: var(--heightOfMain);
+  position: absolute;
+	top: 55%;
+	left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.cellphone-top-buttons-main img{
+  height: 100%;
+}
+
+.cellphone-top-buttons-left-top,
+.cellphone-top-buttons-right-top{
+  height: var(--heightOfBackAndForwardButtons);
+  width: var(--widthOfTopButtons);
+}
+
+.cellphone-top-buttons-left-top img,
+.cellphone-top-buttons-right-top img{
+  height: 100%;
+  padding: 1px var(--paddingOfBackAndForwardButtons);
+}
+
+.cellphone-top-buttons-line3{
+  display: flex;
+  margin-top: 10%;
+}
+
+.cellphone-bottom-line1,
+.cellphone-bottom-line2,
+.cellphone-bottom-line3,
+.cellphone-bottom-line4{
+  justify-content: space-between;
+}
+
+
+.cellphone-top-buttons-right-bottom{
+  margin-left: auto;
+}
+
+.cellphone-bottom{
+  background-color: var(--black);
+}
+
+.cellphone-bottom-line1,
+.cellphone-bottom-line2,
+.cellphone-bottom-line3,
+.cellphone-bottom-line4
+{
+  display: flex;
+  margin-bottom: 2px;
+  border: 2px solid darkred;
+}
+
+.cellphone-bottom-buttons{
+  width: var(--width-bottom-buttons);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 2px solid var(--white);
+  background-color: var(--black);
+  color: var(--white);
+  margin: 4px;
+  cursor: pointer;
+}
+
+.cellphone-bottom-numbers{
+  margin-right: 5px; 
+}
+
+.cellphone-top-buttons-left-bottom,
+.cellphone-top-buttons-right-bottom{
+  height: var(--heightOfCallAndRefuseButtons);
+  width: var(--widthOfTopButtons);
+} 
+
+.cellphone-top-buttons-left-bottom img,
+.cellphone-top-buttons-right-bottom img{
+  padding: 1px var(--paddingOfCallAndRefuseButtons);
+}
+
+.cellphone-top-buttons-left-bottom img,
+.cellphone-top-buttons-right-bottom img,
+.cellphone-top-buttons-right-top img,
+.cellphone-top-buttons-left-top img{
+  height: 100%;
+}
+
+.cursor{
+  cursor: pointer;
+}
